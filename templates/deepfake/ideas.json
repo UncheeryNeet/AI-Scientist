@@ -1,0 +1,29 @@
+[
+    {
+        "Name": "RawNet2 for spoofing",
+        "Title": "Implement RawNet2 to use it in audio anti-spoofing",
+        "Experiment": "RawNet2 is one of the most popular CNN-based audio recognition models. Audio anti-spoofing is one of the main challenges in audio domain. Successfully impelmenting the model could potentially lead to broader search dimension of models in anti-spoofing domain",
+        "Interestingness": 4,
+        "Feasibility": 9,
+        "Novelty": 4,
+        "novel": false
+    },
+    {
+        "Name": "lightweight_self_attention_rawnet2",
+        "Title": "Exploring Lightweight Self-Attention Mechanisms in RawNet2 for Audio Anti-Spoofing",
+        "Experiment": "Modify the RawNet2 architecture to include a lightweight self-attention mechanism, such as Performer or MobileBERT-style attention, to capture temporal dependencies in audio signals. Integrate the self-attention module into the existing architecture in a modular way, allowing for easy comparison with the baseline model. Evaluate the modified model on the anti-spoofing task using metrics such as EER and t-DCF to assess the impact of self-attention on performance.",
+        "Interestingness": 8,
+        "Feasibility": 7,
+        "Novelty": 8,
+        "novel": true
+    },
+    {
+        "Name": "tcn_rawnet2",
+        "Title": "Exploring Temporal Convolutional Networks in RawNet2 for Audio Anti-Spoofing",
+        "Experiment": "Modify the RawNet2 architecture to replace the GRU layer with a Temporal Convolutional Network (TCN). Design the TCN to capture long-range temporal dependencies in the audio signals, ensuring it aligns with the computational constraints of the task. Integrate the TCN into the existing architecture in a modular way, allowing for easy comparison with the baseline model. Evaluate the modified model on the anti-spoofing task using metrics such as EER, t-DCF, FLOPs, and inference time to assess the impact of the TCN on performance and computational efficiency. Compare the results with the baseline RawNet2 model to determine the effectiveness of the TCN in capturing temporal patterns in audio signals.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 7,
+        "novel": true
+    }
+]

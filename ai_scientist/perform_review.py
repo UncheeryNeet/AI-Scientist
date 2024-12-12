@@ -308,12 +308,16 @@ def load_review(path):
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 fewshot_papers = [
+    os.path.join(dir_path, "fewshot_examples/mos_pit.pdf"),
+    os.path.join(dir_path, "fewshot_examples/emphasis.pdf"),
     os.path.join(dir_path, "fewshot_examples/132_automated_relational.pdf"),
     os.path.join(dir_path, "fewshot_examples/attention.pdf"),
     os.path.join(dir_path, "fewshot_examples/2_carpe_diem.pdf"),
 ]
 
 fewshot_reviews = [
+    os.path.join(dir_path, "fewshot_examples/mos_pit.json"),
+    os.path.join(dir_path, "fewshot_examples/emphasis.json"),
     os.path.join(dir_path, "fewshot_examples/132_automated_relational.json"),
     os.path.join(dir_path, "fewshot_examples/attention.json"),
     os.path.join(dir_path, "fewshot_examples/2_carpe_diem.json"),

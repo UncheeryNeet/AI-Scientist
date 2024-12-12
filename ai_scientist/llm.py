@@ -18,6 +18,7 @@ AVAILABLE_LLMS = [
     "o1-mini-2024-09-12",
     "deepseek-coder-v2-0724",
     "llama3.1-405b",
+    "deepseek-chat",
     # Anthropic Claude models via Amazon Bedrock
     "bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
     "bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0",
@@ -212,10 +213,10 @@ def get_response_from_llm(
         )
         content = response.choices[0].message.content
         new_msg_history = new_msg_history + [{"role": "assistant", "content": content}]
-    elif model == "deepseek-coder-v2-0724":
+    elif model in ["deepseek-coder-v2-0724", "deepseek-chat"]:
         new_msg_history = msg_history + [{"role": "user", "content": msg}]
         response = client.chat.completions.create(
-            model="deepseek-coder",
+            model=model,
             messages=[
                 {"role": "system", "content": system_message},
                 *new_msg_history,
@@ -303,10 +304,10 @@ def create_client(model):
     elif model in ["o1-preview-2024-09-12", "o1-mini-2024-09-12"]:
         print(f"Using OpenAI API with model {model}.")
         return openai.OpenAI(), model
-    elif model == "deepseek-coder-v2-0724":
+    elif model.startswith("deepseek"):
         print(f"Using OpenAI API with {model}.")
         return openai.OpenAI(
-            api_key=os.environ["DEEPSEEK_API_KEY"],
+            api_key="sk-3dcdfa1b51074bffbae50565d1f1976c",#os.environ["DEEPSEEK_API_KEY"],
             base_url="https://api.deepseek.com"
         ), model
     elif model == "llama3.1-405b":

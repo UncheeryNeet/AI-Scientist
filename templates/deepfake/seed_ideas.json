@@ -1,0 +1,18 @@
+[
+    {
+        "Name": "RawNet2 for spoofing",
+        "Title": "Implement RawNet2 to use it in audio anti-spoofing",
+        "Experiment": "RawNet2 is one of the most popular CNN-based audio recognition models. Audio anti-spoofing is one of the main challenges in audio domain. Successfully impelmenting the model could potentially lead to broader search dimension of models in anti-spoofing domain",
+        "Interestingness": 4,
+        "Feasibility": 9,
+        "Novelty": 4
+    },
+    {
+        "Name": "Parameterise analytic filterbanks in RawNet2",
+        "Title": "Implement parameterised analytic filterbanks and preemphasis modules, which is a extension of SincConv, to RawNet2",
+        "Experiment": "Parameterised Analytic Filterbank is used to process raw waveform into time-frequency representation. Successfully implementing the module could potentially lead to broader search dimension of models in anti-spoofing domain. It can be enabled by configuring preemp option in RawNet2 module",
+        "Interestingness": 5,
+        "Feasibility": 6,
+        "Novelty": 4
+    }
+]

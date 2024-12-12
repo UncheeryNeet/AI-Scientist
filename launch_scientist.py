@@ -170,6 +170,8 @@ def do_idea(
         )
         if model == "deepseek-coder-v2-0724":
             main_model = Model("deepseek/deepseek-coder")
+        elif model == "deepseek-chat":
+            main_model = Model("deepseek/deepseek-chat")
         elif model == "llama3.1-405b":
             main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
         else:
@@ -204,6 +206,8 @@ def do_idea(
             fnames = [exp_file, writeup_file, notes]
             if model == "deepseek-coder-v2-0724":
                 main_model = Model("deepseek/deepseek-coder")
+            elif model == "deepseek-chat":
+                main_model = Model("deepseek/deepseek-chat")
             elif model == "llama3.1-405b":
                 main_model = Model("openrouter/meta-llama/llama-3.1-405b-instruct")
             else:
@@ -319,7 +323,7 @@ if __name__ == "__main__":
 
     with open(osp.join(base_dir, "ideas.json"), "w") as f:
         json.dump(ideas, f, indent=4)
-
+  
     novel_ideas = [idea for idea in ideas if idea["novel"]]
     # novel_ideas = list(reversed(novel_ideas))
 
