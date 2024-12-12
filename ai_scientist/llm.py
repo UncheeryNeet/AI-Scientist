@@ -307,7 +307,7 @@ def create_client(model):
     elif model.startswith("deepseek"):
         print(f"Using OpenAI API with {model}.")
         return openai.OpenAI(
-            api_key="sk-3dcdfa1b51074bffbae50565d1f1976c",#os.environ["DEEPSEEK_API_KEY"],
+            api_key= os.environ["DEEPSEEK_API_KEY"],
             base_url="https://api.deepseek.com"
         ), model
     elif model == "llama3.1-405b":

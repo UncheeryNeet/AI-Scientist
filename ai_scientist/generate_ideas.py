@@ -165,16 +165,8 @@ def generate_ideas(
 
     ## SAVE IDEAS
     ideas = []
-    tempList = os.listdir('./results/deepfake')
     for idea_str in idea_str_archive:
-        skip = False
-        temp = json.loads(idea_str)
-        for title in tempList:
-            if temp["Name"] in title:
-                skip = True
-                break
-        if not skip:
-            ideas.append(temp)
+        ideas.append(json.loads(idea_str))
 
     with open(osp.join(base_dir, "ideas.json"), "w") as f:
         json.dump(ideas, f, indent=4)
