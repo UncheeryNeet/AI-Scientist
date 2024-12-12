@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template.aux
+The style file: iclr2024_conference.bst
+Database file #1: references.bib
+Repeated entry---line 113 of file references.bib
+ : @article{Wang2019TheA2
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 123 of file references.bib
+ : @article{Feng2019SHNUAS
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 167 of file references.bib
+ : @inproceedings{Akhtar2017BiometricSA
+ :                                     ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "asvspoof2019"
+Warning--I didn't find a database entry for "kingma2014adam"
+Warning--I didn't find a database entry for "asteroid"
+Warning--empty booktitle in Akhtar2017BiometricSA
+You've used 12 entries,
+            2773 wiz_defined-function locations,
+            663 strings with 8203 characters,
+and the built_in function-call counts, 8997 in all, are:
+= -- 686
+> -- 970
+< -- 6
++ -- 324
+- -- 312
+* -- 839
+:= -- 1478
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 140
+chr.to.int$ -- 12
+cite$ -- 25
+duplicate$ -- 273
+empty$ -- 427
+format.name$ -- 328
+if$ -- 1793
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 12
+newline$ -- 68
+num.names$ -- 48
+pop$ -- 279
+preamble$ -- 1
+purify$ -- 128
+quote$ -- 0
+skip$ -- 298
+stack$ -- 0
+substring$ -- 124
+swap$ -- 43
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 132
+warning$ -- 1
+while$ -- 42
+width$ -- 0
+write$ -- 155
+(There were 3 error messages)

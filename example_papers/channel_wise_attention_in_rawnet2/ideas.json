@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "RawNet2 for spoofing",
+        "Title": "Implement RawNet2 to use it in audio anti-spoofing",
+        "Experiment": "RawNet2 is one of the most popular CNN-based audio recognition models. Audio anti-spoofing is one of the main challenges in audio domain. Successfully impelmenting the model could potentially lead to broader search dimension of models in anti-spoofing domain",
+        "Interestingness": 4,
+        "Feasibility": 9,
+        "Novelty": 4,
+        "novel": false
+    },
+    {
+        "Name": "Parameterise analytic filterbanks in RawNet2",
+        "Title": "Implement parameterised analytic filterbanks and preemphasis modules, which is a extension of SincConv, to RawNet2",
+        "Experiment": "Parameterised Analytic Filterbank is used to process raw waveform into time-frequency representation. Successfully implementing the module could potentially lead to broader search dimension of models in anti-spoofing domain. It can be enabled by configuring preemp option in RawNet2 module",
+        "Interestingness": 5,
+        "Feasibility": 6,
+        "Novelty": 4,
+        "novel": true
+    },
+    {
+        "Name": "depthwise_separable_convolutions_in_rawnet2",
+        "Title": "Exploring Depthwise Separable Convolutions in RawNet2 for Audio Anti-Spoofing",
+        "Experiment": "Modify the residual blocks in RawNet2 to use depthwise separable convolutions instead of standard convolutions. This involves replacing the nn.Conv1d layers in the Residual_block class with nn.Conv1d layers that have groups equal to the number of input channels. Evaluate the modified model's performance on the audio anti-spoofing task by training and testing it on the provided datasets. Compare the results in terms of accuracy, model size, and computational efficiency with the original RawNet2 model.",
+        "Interestingness": 7,
+        "Feasibility": 8,
+        "Novelty": 6,
+        "novel": true
+    },
+    {
+        "Name": "channel_wise_attention_in_rawnet2",
+        "Title": "Implementing Channel-Wise Attention in RawNet2 for Audio Anti-Spoofing",
+        "Experiment": "Modify the residual blocks in RawNet2 to include a channel-wise attention mechanism. This involves adding a small feedforward network within the Residual_block class to compute attention weights for each channel of the feature maps. These weights are then applied to the output of the convolutional layers to enhance the model's focus on important features. Evaluate the modified model's performance on the audio anti-spoofing task by training and testing it on the provided datasets. Compare the results in terms of accuracy, model size, and computational efficiency with the original RawNet2 model.",
+        "Interestingness": 8,
+        "Feasibility": 8,
+        "Novelty": 7,
+        "novel": true
+    }
+]

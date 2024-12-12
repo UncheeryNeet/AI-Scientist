@@ -1,0 +1,41 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock \emph{arXiv preprint arXiv:1512.03385}, 2016.
+
+\bibitem[Howard et~al.(2019)Howard, Sandler, Chu, Chen, Chen, Tan, Wang, Zhu,
+  Pang, Vasudevan, Le, and Adam]{howard2019mobilenetv3}
+Andrew Howard, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo~Chen, Mingxing
+  Tan, Weijun Wang, Yukun Zhu, Ruoming Pang, Vijay Vasudevan, Quoc~V Le, and
+  Hartwig Adam.
+\newblock {MobileNetV3}: Searching for {MobileNetV3}.
+\newblock \emph{arXiv preprint arXiv:1905.02244}, 2019.
+
+\bibitem[Lu et~al.(2024)Lu, Lu, Lange, Foerster, Clune, and
+  Ha]{lu2024aiscientist}
+Chris Lu, Cong Lu, Robert~Tjarko Lange, Jakob Foerster, Jeff Clune, and David
+  Ha.
+\newblock The {AI} {S}cientist: Towards fully automated open-ended scientific
+  discovery.
+\newblock \emph{arXiv preprint arXiv:2408.06292}, 2024.
+
+\bibitem[Simonyan \& Zisserman(2014)Simonyan and Zisserman]{simonyan2014very}
+Karen Simonyan and Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock \emph{arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, Łukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{arXiv preprint arXiv:1706.03762}, 2017.
+
+\end{thebibliography}

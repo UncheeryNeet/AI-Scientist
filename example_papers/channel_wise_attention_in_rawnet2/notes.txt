@@ -1,0 +1,28 @@
+# Title: Implementing Channel-Wise Attention in RawNet2 for Audio Anti-Spoofing
+# Experiment description: Modify the residual blocks in RawNet2 to include a channel-wise attention mechanism. This involves adding a small feedforward network within the Residual_block class to compute attention weights for each channel of the feature maps. These weights are then applied to the output of the convolutional layers to enhance the model's focus on important features. Evaluate the modified model's performance on the audio anti-spoofing task by training and testing it on the provided datasets. Compare the results in terms of accuracy, model size, and computational efficiency with the original RawNet2 model.
+## Run 0: Baseline
+Results: {'ASVspoof2019': {'best_val_eer_mean': 1.443677164498324, 'test_eer_mean': 5.21003896311118, 'test_acc_mean': 99.50893575913702, 'test_tdcf_mean': 0.17250132298420393, 'total_train_time_mean': 2470.2562415599823, 'test_tcdf_mean': 0.14839757285999997}}
+Description: Baseline results.
+
+## Plot Descriptions
+The following plots were generated to visualize the performance of the model across different runs. Each plot corresponds to a specific metric and dataset, and the filenames are provided for reference.
+
+1. **Training Loss Across Runs for ASVspoof2019**
+   - **Filename**: `train_loss_ASVspoof2019_across_runs.png`
+   - **Description**: This plot shows the training loss over time (iterations) for each run (Run 0, Run 2, Run 3, Run 4, Run 5). The training loss is a measure of how well the model is learning during training. Lower values indicate better learning. The plot helps compare the training stability and convergence across different runs.
+
+2. **Validation Loss Across Runs for ASVspoof2019**
+   - **Filename**: `val_loss_ASVspoof2019_across_runs.png`
+   - **Description**: This plot shows the validation loss over time (epochs) for each run. Validation loss is a measure of how well the model generalizes to unseen data. Lower values indicate better generalization. The plot helps compare the validation loss trends across different runs.
+
+3. **Validation EER Across Runs for ASVspoof2019**
+   - **Filename**: `val_eer_ASVspoof2019_across_runs.png`
+   - **Description**: This plot shows the Equal Error Rate (EER) on the validation set over time (epochs) for each run. EER is a common metric for evaluating the performance of anti-spoofing systems. Lower EER values indicate better performance. The plot helps compare the validation EER trends across different runs.
+
+4. **Test Accuracy Across Runs for ASVspoof2019**
+   - **Filename**: `test_accuracy_ASVspoof2019_across_runs.png`
+   - **Description**: This plot shows the test accuracy (in percentage) for each run. Test accuracy is a measure of how well the model performs on the test set. Higher values indicate better performance. The plot helps compare the test accuracy across different runs.
+
+5. **Test EER Across Runs for ASVspoof2019**
+   - **Filename**: `test_eer_ASVspoof2019_across_runs.png`
+   - **Description**: This plot shows the Equal Error Rate (EER) on the test set for each run. EER is a common metric for evaluating the performance of anti-spoofing systems. Lower EER values indicate better performance. The plot helps compare the test EER across different runs.

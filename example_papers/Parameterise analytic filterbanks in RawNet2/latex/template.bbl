@@ -1,0 +1,100 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akhtar(2017)]{Akhtar2017BiometricSA}
+Z.~Akhtar.
+\newblock Biometric spoofing and anti-spoofing.
+\newblock pp.\  121--139, 2017.
+
+\bibitem[Dosovitskiy et~al.(2020)Dosovitskiy, Beyer, Kolesnikov, Weissenborn,
+  Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and
+  Houlsby]{dosovitskiy2020image}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
+  Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg
+  Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale.
+\newblock \emph{arXiv preprint arXiv:2010.11929}, 2020.
+
+\bibitem[Feng et~al.(2019)Feng, Tong, Long, Wei, Yang, and
+  Zhang]{Feng2019SHNUAS}
+Zhimin Feng, Qiqi Tong, Yanhua Long, Shuang Wei, Chunxia Yang, and Qiaozheng
+  Zhang.
+\newblock Shnu anti-spoofing systems for asvspoof 2019 challenge.
+\newblock \emph{2019 Asia-Pacific Signal and Information Processing Association
+  Annual Summit and Conference (APSIPA ASC)}, pp.\  548--552, 2019.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock \emph{arXiv preprint arXiv:1512.03385}, 2016.
+
+\bibitem[Howard et~al.(2019)Howard, Sandler, Chu, Chen, Chen, Tan, Wang, Zhu,
+  Pang, Vasudevan, Le, and Adam]{howard2019mobilenetv3}
+Andrew Howard, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo~Chen, Mingxing
+  Tan, Weijun Wang, Yukun Zhu, Ruoming Pang, Vijay Vasudevan, Quoc~V Le, and
+  Hartwig Adam.
+\newblock {MobileNetV3}: Searching for {MobileNetV3}.
+\newblock \emph{arXiv preprint arXiv:1905.02244}, 2019.
+
+\bibitem[Liu et~al.(2023)Liu, Chen, Gou, Huang, Wang, Dai, and
+  Xiong]{Liu2023TowardsUD}
+Yuchen Liu, Yabo Chen, Mengran Gou, Chun-Ting Huang, Yaoming Wang, Wenrui Dai,
+  and Hongkai Xiong.
+\newblock Towards unsupervised domain generalization for face anti-spoofing.
+\newblock \emph{2023 IEEE/CVF International Conference on Computer Vision
+  (ICCV)}, pp.\  20597--20607, 2023.
+
+\bibitem[Lu et~al.(2024)Lu, Lu, Lange, Foerster, Clune, and
+  Ha]{lu2024aiscientist}
+Chris Lu, Cong Lu, Robert~Tjarko Lange, Jakob Foerster, Jeff Clune, and David
+  Ha.
+\newblock The {AI} {S}cientist: Towards fully automated open-ended scientific
+  discovery.
+\newblock \emph{arXiv preprint arXiv:2408.06292}, 2024.
+
+\bibitem[Sabaghi et~al.(2021)Sabaghi, Oghbaie, Hashemifard, and
+  Akbari]{Sabaghi2021DeepLM}
+Arian Sabaghi, Marzieh Oghbaie, Kooshan Hashemifard, and Mohammad Akbari.
+\newblock Deep learning meets liveness detection: Recent advancements and
+  challenges.
+\newblock \emph{ArXiv}, abs/2112.14796, 2021.
+
+\bibitem[Simonyan \& Zisserman(2014)Simonyan and Zisserman]{simonyan2014very}
+Karen Simonyan and Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock \emph{arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem[Tan \& Le(2019)Tan and Le]{tan2019efficientnet}
+Mingxing Tan and Quoc~V Le.
+\newblock {EfficientNet}: Rethinking model scaling for convolutional neural
+  networks.
+\newblock \emph{arXiv preprint arXiv:1905.11946}, 2019.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, Łukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{arXiv preprint arXiv:1706.03762}, 2017.
+
+\bibitem[Wang et~al.(2019)Wang, Yamagishi, Todisco, Delgado, Nautsch, Evans,
+  Sahidullah, Vestman, Kinnunen, LEE, Juvela, Alku, Peng, Hwang, Tsao, Wang,
+  Maguer, Becker, Henderson, Clark, Zhang, Wang, Jia, Onuma, Mushika, Kaneda,
+  Jiang, Liu, Wu, Huang, Toda, Tanaka, Kameoka, Steiner, Matrouf, Bonastre,
+  Govender, Ronanki, Zhang, and Ling]{Wang2019TheA2}
+Xin Wang, J.~Yamagishi, M.~Todisco, Héctor Delgado, A.~Nautsch, N.~Evans, Md.
+  Sahidullah, Ville Vestman, T.~Kinnunen, Kong~Aik LEE, Lauri Juvela, P.~Alku,
+  Yu-Huai Peng, Hsin-Te Hwang, Yu~Tsao, Hsin-Min Wang, Sébastien~Le Maguer,
+  Markus Becker, Fergus Henderson, R.~Clark, Yu~Zhang, Quan Wang, Ye~Jia, Kai
+  Onuma, Koji Mushika, Takashi Kaneda, Yuan Jiang, Li-Juan Liu, Yi-Chiao Wu,
+  Wen-Chin Huang, T.~Toda, Kou Tanaka, H.~Kameoka, I.~Steiner, D.~Matrouf,
+  J.~Bonastre, Avashna Govender, S.~Ronanki, Jing-Xuan Zhang, and Zhenhua Ling.
+\newblock The asvspoof 2019 database.
+\newblock \emph{ArXiv}, abs/1911.01601, 2019.
+
+\end{thebibliography}

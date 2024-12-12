@@ -1,0 +1,27 @@
+# Title: Implement parameterised analytic filterbanks and preemphasis modules, which is a extension of SincConv, to RawNet2
+# Experiment description: Parameterised Analytic Filterbank is used to process raw waveform into time-frequency representation. Successfully implementing the module could potentially lead to broader search dimension of models in anti-spoofing domain. It can be enabled by configuring preemp option in RawNet2 module
+## Run 0: Baseline
+Results: {'ASVspoof2019': {'best_val_eer_mean': 1.443677164498324, 'test_eer_mean': 5.21003896311118, 'test_acc_mean': 99.50893575913702, 'test_tdcf_mean': 0.17250132298420393, 'total_train_time_mean': 2470.2562415599823, 'test_tcdf_mean': 0.14839757285999997}}
+Description: Baseline results.
+
+## Plots Description
+
+### Training Loss Across Runs
+- **Filename**: `train_loss_ASVspoof2019_across_runs.png`
+- **Description**: This plot shows the training loss across different runs (run_0 to run_5). Each run corresponds to a different configuration of the preemphasis module. The x-axis represents the iteration number, and the y-axis represents the training loss. The plot helps in understanding how the training loss evolves over time for each run.
+
+### Validation Loss Across Runs
+- **Filename**: `val_loss_ASVspoof2019_across_runs.png`
+- **Description**: This plot shows the validation loss across different runs (run_0 to run_5). The x-axis represents the epoch number, and the y-axis represents the validation loss. The plot helps in understanding how the validation loss evolves over epochs for each run.
+
+### Validation EER Across Runs
+- **Filename**: `val_eer_ASVspoof2019_across_runs.png`
+- **Description**: This plot shows the validation EER (Equal Error Rate) across different runs (run_0 to run_5). The x-axis represents the epoch number, and the y-axis represents the validation EER. The plot helps in understanding how the validation EER evolves over epochs for each run.
+
+### Test Accuracy Across Runs
+- **Filename**: `test_accuracy_ASVspoof2019_across_runs.png`
+- **Description**: This plot shows the test accuracy across different runs (run_0 to run_5). The x-axis represents the run name, and the y-axis represents the test accuracy in percentage. The plot helps in comparing the test accuracy of each run.
+
+### Test EER Across Runs
+- **Filename**: `test_eer_ASVspoof2019_across_runs.png`
+- **Description**: This plot shows the test EER (Equal Error Rate) across different runs (run_0 to run_5). The x-axis represents the run name, and the y-axis represents the test EER in percentage. The plot helps in comparing the test EER of each run.
