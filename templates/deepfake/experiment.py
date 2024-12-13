@@ -28,7 +28,7 @@ from asteroid_filterbanks import Encoder, ParamSincFB
 # Configuration files
 @dataclass
 class Config:
-    data_path: str = "/content/data/LA"
+    data_path: str = "../../data"
     num_classes: int = 10
     batch_size: int = 32 * 4
     weight_decay: float = 1e-4
@@ -571,7 +571,7 @@ def train_epoch(train_loader, model, optimizer, epoch, device):
     return running_loss, train_accuracy, train_log_info
 
 
-def run(config: Config, args: ModelArgs):
+def run(config: Config, args: ModelArgs, dataset: str):
     random.seed(config.seed)
     np.random.seed(config.seed)
     torch.manual_seed(config.seed)
@@ -592,6 +592,7 @@ def run(config: Config, args: ModelArgs):
     )  # DDP is not needed when a module doesn't have any parameter that requires a gradient.
 
     track = config.track
+    config.data_path = os.path.join(config.data_path, f"{dataset}/{track}")
     prefix_2019 = "ASVspoof2019.{}".format(track)
 
     trn_database_path = os.path.join(
@@ -761,7 +762,7 @@ if __name__ == "__main__":
     for dataset in datasets:
         final_info_list = []
         for seed_offset in range(num_seeds[dataset]):
-            final_info, val_info, train_info = run(config, model_args)
+            final_info, val_info, train_info = run(config, model_args, dataset)
             all_results[f"{dataset}_{seed_offset}_final_info"] = final_info
             all_results[f"{dataset}_{seed_offset}_train_info"] = train_info
             all_results[f"{dataset}_{seed_offset}_val_info"] = val_info
