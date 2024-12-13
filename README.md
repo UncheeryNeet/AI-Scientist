@@ -141,6 +141,29 @@ export S2_API_KEY="YOUR KEY HERE"
 
 This section provides instructions for setting up each of the three templates used in our paper. Before running The AI Scientist experiments, please ensure you have completed the setup steps for the templates you are interested in.
 
+
+### Deepfake Template
+
+**Description:** This template investigates CNN-based speech anti-spoofing tasks
+
+**Setup Steps:**
+
+1. **Prepare the data:**
+
+   ```bash
+   python data/asvspoof2019/prepare.py
+   ```
+
+2. **Create baseline runs (machine dependent):**
+
+   ```bash
+   # Set up deepfake baseline run
+   # NOTE: YOU MUST FIRST RUN THE PREPARE SCRIPTS ABOVE!
+   cd templates/deepfake
+   python experiment.py --out_dir run_0
+   python plot.py
+   ```
+
 ### NanoGPT Template
 
 **Description:** This template investigates transformer-based autoregressive next-token prediction tasks.
